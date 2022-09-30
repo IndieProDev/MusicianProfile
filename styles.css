@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -18,8 +18,6 @@ header {
     border-bottom: 1px solid #000; 
 }
 
-h1 {font-weight: normal;}
-
 .container {
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 3px;
@@ -34,15 +32,13 @@ h1 {font-weight: normal;}
 ul {
     list-style-type:none;
     border: 0px;
-
 }
 
 li {
     display: inline;
     height: fit-content;
-    margin-right: 50px;
-
-  }
+    margin-right: 2rem;
+}
 
 .artist {
     align-items: center;
@@ -68,95 +64,92 @@ a:hover {
 
 
 a:active {
-     text-decoration: none;
- }
+    text-decoration: none;
+}
 
- img {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
     border-radius: 60%;
     width: 80px;
     height: 80px;
 }
 
- .image1 {
-    margin-top: 30px;
-    height: fit-content;
-    width: fit-content;
-    margin-left: 10px;
-    border-radius:50%;
- }
-
-  .boxleft {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    justify-content: space-around;
-    align-items: start;
-    padding-right: 70px;
-    display: inline-block;
-      flex: 1 0 100px;
- } 
- 
- tr {
-    margin-left: 80px;
-    font-size: 25px;
+.image-main {
+    height: 20rem ;
+    width: 20rem;
+    border-radius: 50%;
  }
 
  .inst {
-    margin-left: 50px;
-    font-size: 25px;
-    bottom: 5px;
- }
-
-
- .boxcenter {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
-    display: inline-block;
-    flex: 1 0 100px;
+    font-size: 2rem;
  }
 
  .textcenter {
-    height: 15em;
- }
-  
- .inst {
-    margin-left: 50px;
-    font-size: 25px;
+    margin-top: 1.5rem;
  }
 
-.boxright{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    display: inline-block;
-   flex: 1 0 100px;
+.artist-title-wrapper {
 }
-   
+
+.artist-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+  
 
 .artist-page-played-with_header {
-    font-size: medium;
-    height: 11em;
-    padding-left: 100px;
-    margin: 10px;
+    font-size: 1.5rem;
 }
 
 .artistpic {
     display: flex;
-    flex-direction: column;   
-    padding-left: 100px;
-    padding-bottom: 30px; 
+    flex-direction: column; 
+    justify-content: space-around;
+    height: 100%;
 }
 
-.wrapper {
+.artist-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.boxright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-    }
+.boxcenter {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+.boxleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.box {
+    padding: 1rem 1.5rem;
+}
+
+.songs {
+    display: flex;
+    margin: auto auto 2rem 0;
+}
+
+.song {
+    margin-right: 2rem;
+    font-size: 1.2rem;
+}
