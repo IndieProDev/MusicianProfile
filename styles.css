@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 .topbar {
     display: flex;
@@ -45,10 +48,6 @@ li {
     align-items: center;
     padding-top: 2em;
     line-height: 0em;
-
-
-
-
 }
 
 a:link {
@@ -79,33 +78,22 @@ a:active {
 }
 
  .image1 {
+    margin-top: 30px;
     height: fit-content;
     width: fit-content;
     margin-left: 10px;
     border-radius:50%;
  }
 
- .Box1 {
-    display: flex;
-    clear: both;
-    margin-top: 30px;
-    margin-bottom: 100px;
-    align-items: center;
-    box-sizing: border-box;
- }
-
   .boxleft {
-    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: left;
     justify-content: space-around;
     align-items: start;
     padding-right: 70px;
-    padding-bottom: 50px;
-    position: relative;
-    box-sizing: border-box;
-   
+    display: inline-block;
+      flex: 1 0 100px;
  } 
  
  tr {
@@ -116,7 +104,6 @@ a:active {
  .inst {
     margin-left: 50px;
     font-size: 25px;
-    position: absolute;
     bottom: 5px;
  }
 
@@ -125,24 +112,16 @@ a:active {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    padding-left: 50px;
-    padding-bottom: 50px; 
-    box-sizing: border-box;
-   
+    justify-content: space-around;
+    align-items: center;
+    display: inline-block;
+    flex: 1 0 100px;
  }
 
- div .textcenter {
-    border-bottom: 50px;
-    position: absolute;
+ .textcenter {
+    height: 15em;
  }
-
- div .songs {
-    padding-top: 100px;
-    margin-top: 70px;
-    padding-right: 20em;   
-}
-
+  
  .inst {
     margin-left: 50px;
     font-size: 25px;
@@ -151,21 +130,33 @@ a:active {
 .boxright{
     display: flex;
     flex-direction: column;
-    justify-content: right;
-     padding-left:5em;
-    box-sizing: border-box;
+    align-items: flex-end;
+    display: inline-block;
+   flex: 1 0 100px;
 }
+   
 
 .artist-page-played-with_header {
     font-size: medium;
-    height: 50px;
+    height: 11em;
+    padding-left: 100px;
+    margin: 10px;
 }
 
 .artistpic {
-    height: 10em;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
+    padding-left: 100px;
+    padding-bottom: 30px; 
 }
 
+.wrapper {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
 
