@@ -8,8 +8,7 @@
 }
 
 #main-header {
-    background-color:white;  
- 
+    background-color:black;
 }
 
 header {
@@ -31,7 +30,10 @@ h1 {
 
 .container span {
     font-size: 30px;
+    font-family:cursive;
+    color: aliceblue;
 }
+
 
 ul {
     list-style-type:none;
@@ -41,6 +43,8 @@ ul {
 
 li {
     display: inline;
+    font-size: 1.5rem;
+    font-family:cursive;
     height: fit-content;
     margin-right: 50px;
 
@@ -61,7 +65,7 @@ a:link {
 
 a:visited {
      text-decoration: none;
-      color: black; 
+      color:aliceblue
  }
 
 
@@ -87,17 +91,39 @@ a:active {
     height: 80px;
 }
 
-
-
  .artist-wrapper {
     display: flex;
     justify-content: space-between;
     background:url('images/bgmarley.jpg'); no-repeat center center fixed;
+ }
+
+ 
+  .artist-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    background:url('images/bghendrix.jpg'); no-repeat center center fixed;
+  }
+
+  .artist-wrapper3 {
+    display: flex;
+    justify-content: space-between;
+    background:url('images/bgmccartney.jpg'); no-repeat center center fixed;
+  }
+
+  .artist-wrapper4 {
+    display: flex;
+    justify-content: space-between;
+    background:url('images/bgmercury.jpg'); no-repeat center center fixed;
+  }
+
+  .poster {
+    opacity: 0.7;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: center center;
+    background-position: center center; 
+    
   }
 
   .box {
@@ -121,6 +147,14 @@ a:active {
  .inst {
     font-size: 2rem;
     color: aliceblue;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px red;
+ }
+
+ .mfp-img {
+    max-height: 688px;
+    width: 10rem;
+    height: auto;
  }
 
 .boxcenter {
@@ -132,7 +166,9 @@ a:active {
 
  .artist-title {
     font-size:2.5rem;
+    font-family:cursive;
     font-weight: bold;
+    text-shadow: 2px 2px 4px red;
     color: aliceblue;
     text-align:left;
     margin: 0;  
@@ -141,6 +177,9 @@ a:active {
  .textcenter {
     margin-top:1.5rem;
     color: aliceblue;
+    font-size: 1.5rem;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px red;
  }
 
 
@@ -155,15 +194,14 @@ a:active {
  .songs {
     display: flex;
     margin:auto auto 2rem 0;
-    color: aliceblue;
-    
  }
 
  .song {
     margin-right: 3rem;
     font-size: 1.5rem;
-    
-
+    font-family: cursive;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px red;  
  }
 
  .boxright{
@@ -175,8 +213,9 @@ a:active {
 
 .artist-page-played-with_header {
     font-size: 1.5rem;
+    font-family: cursive;
     color: aliceblue;
-    
+    text-shadow: 2px 2px 4px red;   
 }
 
 .artistpic {
@@ -184,7 +223,9 @@ a:active {
     flex-direction: column; 
     justify-content: space-around; 
     height: 100%;  
+    
 }
+
 
 
 
